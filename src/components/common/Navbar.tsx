@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-amber-600">
+    <nav className="flex justify-between items-center bg-blue-400/30">
       {/* Change this to NavLink later */}
       <div className="flex gap-5 p-5">
         <NavLink to="/">Home</NavLink>
