@@ -1,11 +1,27 @@
 import "./App.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import RootLayout from "./layouts/RootLayout";
+
+// BrowserRouter + Routes + Route Combo
+// RouterProvider + createBrowserRouter
+// BrowserRouter + Routes + Route + Outlet
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { path: "/", index: true, element: "Home" },
+      { path: "/about", element: "About" },
+      { path: "/projects", element: "Projects" },
+      { path: "/experience", element: "Experience" },
+      { path: "/contact", element: "Contact" },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <h1>Starting App</h1>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
