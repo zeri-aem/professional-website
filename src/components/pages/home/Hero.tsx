@@ -2,29 +2,27 @@ import zeriImage from "../../../assets/zeri.png";
 
 function Hero() {
   return (
-    <div className="flex justify-between items-center pl-10 pr-10 gap-10 bg-yellow-200/30">
+    // Hero Container // bg-[#f1faee]
+    <section className="flex flex-wrap justify-center items-center gap-5">
       {/* Image */}
-      <div className="flex justify-center items-center ml-50">
-        <img
-          src={zeriImage}
-          alt="Zeri's Image"
-          className="min-w-110 w-110 h-170"
-        />
-      </div>
+      <img
+        src={zeriImage}
+        alt="Zeri's Image"
+        className="md:w-85 bg-[#e63946] md:h-130 lg:w-110 lg:h-170 shadow-xl mb-5 rounded-br-md rounded-bl-md"
+      />
 
       {/* Description */}
-      <div className="flex flex-col gap-5 justify-center items-start mr-50">
-        <h1 className="text-4xl">
+      <div className="flex flex-col gap-3 justify-center items-start m-5">
+        <h1>
           <strong>Software Engineer</strong>
         </h1>
-        <h2 className="text-2xl">
-          Hello, I am Zeri Aaron Malacas. I am a{" "}
-          <strong>Licensed Electronics Engineer</strong> and <br /> a{" "}
-          <strong>Licensed Electronics Technican</strong> and I am working as a{" "}
-          <strong>Software Engineer</strong>
-        </h2>
+        <p className="max-w-md">
+          Hello, I'm Zeri. I am a <strong>Licensed Electronics Engineer</strong>{" "}
+          and <br /> a <strong>Licensed Electronics Technican</strong> and I am
+          working as a <strong>Software Engineer</strong>.
+        </p>
       </div>
-    </div>
+    </section>
   );
 }
 

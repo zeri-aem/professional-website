@@ -7,14 +7,15 @@ import ExperiencePreview from "./ExperiencePreview";
 
 function Home() {
   return (
-    <div>
+    <main className="px-10 md:px-20 lg:px-30">
       <Hero />
       <SkillsPreview />
       <AboutPreview />
+      {/* Revamp the project and experience dawg, it looks weird */}
       <ProjectsPreview />
-      <ExperiencePreview />
+      {/* <ExperiencePreview /> */}
       <ContactPreview />
-    </div>
+    </main>
   );
 }
 

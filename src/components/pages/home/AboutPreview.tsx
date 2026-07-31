@@ -1,13 +1,21 @@
+import Button from "../../common/Button";
+
 function AboutPreview() {
   return (
-    <div className="flex justify-start items-center pl-50 pr-50">
-      <div className="flex flex-col justify-start items-start gap-3 p-5">
-        <h1 className="text-4xl">
-          <strong>About</strong>
-        </h1>
-        <h2>I am something...</h2>
-      </div>
-    </div>
+    <section className="flex flex-col justify-center items-start gap-5 p-10">
+      <h1>
+        <strong>About</strong>
+      </h1>
+      <h2>I am something...</h2>
+      {/* Description - p tag */}
+      <p className="text-justify text-wrap max-w-md">
+        I'm a Software Engineer passionate about building reliable and
+        user-focused applications. I enjoy solving projects through code and
+        continuously improving my skills in modern technologies, software
+        development, and data-driven solutions...
+      </p>
+      <Button>See more...</Button>
+    </section>
   );
 }
 
