@@ -30,7 +30,7 @@ function ProjectCard({ ...project }: ProjectCardProps) {
           </div>
           <p>{project.description}</p>
         </div>
-        <div className="bg-blue-500 w-fit p-1 rounded-md">
+        <div className="bg-blue-600 w-fit p-1 rounded-md">
           <h2 className="text-white">{project.category}</h2>
         </div>
       </div>
