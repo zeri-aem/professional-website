@@ -17,9 +17,6 @@ function ContactPreview() {
         <a href="https://github.com/zeri-aem" target="_blank">
           <FaGithub size={ICON_SIZE} />
         </a>
-        <a href="https://github.com/zeri-aem" target="_blank">
-          <FaGithub size={ICON_SIZE} />
-        </a>
         <a href="https://linkedin.com/in/zeri-aaron" target="_blank">
           <FaLinkedin size={ICON_SIZE} />
         </a>
