@@ -3,7 +3,7 @@ import { Moon } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between w-full h-16 items-center bg-[#f1faee]">
+    <nav className="hidden md:flex justify-between w-full h-16 items-center bg-[#f1faee]">
       {/* Change this to NavLink later */}
       <div className="flex gap-5 p-5">
         <NavLink
