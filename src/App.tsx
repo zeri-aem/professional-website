@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import Home from "./components/pages/home/Home";
 import Contact from "./components/pages/contact/Contact";
+import { Toaster } from "sonner";
 
 // BrowserRouter + Routes + Route Combo
 // RouterProvider + createBrowserRouter
@@ -23,7 +24,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Toaster position="top-right" />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
