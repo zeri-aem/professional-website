@@ -7,46 +7,36 @@ export default function Navbar() {
       {/* Change this to NavLink later */}
       <div className="flex gap-5 p-5">
         <NavLink
-          className={({
-            isActive,
-          }) => `text-lg font-bold text-[#1d3557] hover:text-[#457b9d]
-          ${isActive ? "text-[#457b9d]" : "text-[#1d3557]"}`}
+          className={({ isActive }) => `text-lg font-bold hover:text-[#457b9d]
+          ${isActive ? "text-[#457b9d]" : "text-black"}`}
           to="/"
         >
           Home
         </NavLink>
         <NavLink
-          className={({
-            isActive,
-          }) => `text-lg font-bold text-[#1d3557] hover:text-[#457b9d]
-          ${isActive ? "text-[#457b9d]" : "text-[#1d3557]"}`}
+          className={({ isActive }) => `text-lg font-bold hover:text-[#457b9d]
+          ${isActive ? "text-[#457b9d]" : "text-black"}`}
           to="/about"
         >
           About
         </NavLink>
         <NavLink
-          className={({
-            isActive,
-          }) => `text-lg font-bold text-[#1d3557] hover:text-[#457b9d]
-          ${isActive ? "text-[#457b9d]" : "text-[#1d3557]"}`}
+          className={({ isActive }) => `text-lg font-bold  hover:text-[#457b9d]
+          ${isActive ? "text-[#457b9d]" : "text-black"}`}
           to="/projects"
         >
           Projects
         </NavLink>
         <NavLink
-          className={({
-            isActive,
-          }) => `text-lg font-bold text-[#1d3557] hover:text-[#457b9d]
-          ${isActive ? "text-[#457b9d]" : "text-[#1d3557]"}`}
+          className={({ isActive }) => `text-lg font-bold hover:text-[#457b9d]
+          ${isActive ? "text-[#457b9d]" : "text-black"}`}
           to="/experience"
         >
           Experience
         </NavLink>
         <NavLink
-          className={({
-            isActive,
-          }) => `text-lg font-bold text-[#1d3557] hover:text-[#457b9d]
-          ${isActive ? "text-[#457b9d]" : "text-[#1d3557]"}`}
+          className={({ isActive }) => `text-lg font-bold hover:text-[#457b9d]
+          ${isActive ? "text-[#457b9d]" : "text-black"}`}
           to="/contact"
         >
           Contact
