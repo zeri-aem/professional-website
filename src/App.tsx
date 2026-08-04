@@ -4,6 +4,7 @@ import RootLayout from "./layouts/RootLayout";
 import Home from "./components/pages/home/Home";
 import Contact from "./components/pages/contact/Contact";
 import { Toaster } from "sonner";
+import About from "./components/pages/about/About";
 
 // BrowserRouter + Routes + Route Combo
 // RouterProvider + createBrowserRouter
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { path: "/", index: true, element: <Home /> }, // Change to real element in the future
-      { path: "/about", element: "About" },
+      { path: "/about", element: <About /> },
       { path: "/projects", element: "Projects" },
       { path: "/experience", element: "Experience" },
       { path: "/contact", element: <Contact /> },

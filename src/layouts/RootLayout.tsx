@@ -9,7 +9,7 @@ function RootLayout() {
         <Navbar />
       </header>
 
-      <main>
+      <main className="px-3 md:px-5 lg:px-10">
         <Outlet />
       </main>
 

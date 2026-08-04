@@ -12,7 +12,7 @@ function ProjectCard({ ...project }: ProjectCardProps) {
   return (
     <Link
       to="/projects"
-      className="flex flex-col h-full md:max-w-80 lg:max-w-95 rounded-xl shadow border border-gray-200/30"
+      className="flex flex-col h-full rounded-xl shadow border border-gray-200/30"
     >
       <div className="w-full h-52">
         <img

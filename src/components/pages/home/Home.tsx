@@ -7,7 +7,7 @@ import ExperiencePreview from "./ExperiencePreview";
 
 function Home() {
   return (
-    <main className="px-10 md:px-20 lg:px-30">
+    <>
       <Hero />
       <SkillsPreview />
       <AboutPreview />
@@ -15,7 +15,7 @@ function Home() {
       <ProjectsPreview />
       <ExperiencePreview />
       <ContactPreview />
-    </main>
+    </>
   );
 }
 
