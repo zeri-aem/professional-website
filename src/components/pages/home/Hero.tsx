@@ -13,13 +13,19 @@ function Hero() {
 
       {/* Description */}
       <div className="flex flex-col gap-3 justify-center items-start m-5">
-        <h1>
-          <strong>Software Engineer</strong>
-        </h1>
-        <p className="max-w-md">
-          Hello, I'm Zeri. I am a <strong>Licensed Electronics Engineer</strong>{" "}
-          and <br /> a <strong>Licensed Electronics Technican</strong> and I am
-          working as a <strong>Software Engineer</strong>.
+        <h1 className="font-bold text-4xl">Software Engineer</h1>
+        <p className="max-w-2xl text-justify">
+          Hello, I'm Zeri - a Software Engineer with an Electronics Engineering
+          foundation.
+          <br />
+          <br />I build scalable software solutions while combining my expertise
+          in frontend development, data engineering and electronics systems. As
+          a{" "}
+          <strong>
+            Licensed Electronics Engineer and Electronics Technician
+          </strong>
+          , I bring a unique perspective that bridges the gap between hardware
+          and software.
         </p>
       </div>
     </section>

@@ -125,7 +125,7 @@ function ContactForm() {
 
       <button
         type="submit"
-        className="text-center rounded p-2 mt-2 h-10 w-full bg-blue-600 hover:bg-blue-700 cursor-pointer text-white"
+        className="text-center rounded p-2 mt-2 h-10 w-full cursor-pointer text-white bg-[#1d3557] hover:bg-[#457b9d] transition-all duration-300"
         disabled={isSubmitting}
       >
         {isSubmitting ? (

@@ -11,7 +11,7 @@ function Button({ children, to }: ButtonProps) {
     <NavLink
       to={to}
       type="button"
-      className="rounded p-2 bg-blue-600 hover:bg-blue-700 cursor-pointer text-white"
+      className="rounded p-2 cursor-pointer text-white bg-[#1d3557] hover:bg-[#457b9d] transition-all duration-300"
     >
       {children}
     </NavLink>

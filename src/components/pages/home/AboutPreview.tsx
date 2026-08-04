@@ -3,10 +3,7 @@ import Button from "../../common/Button";
 function AboutPreview() {
   return (
     <section className="flex flex-col justify-center items-start gap-5 p-10">
-      <h1>
-        <strong>About</strong>
-      </h1>
-      <h2>I am something...</h2>
+      <h1 className="font-bold text-4xl">About</h1>
       {/* Description - p tag */}
       <p className="text-justify text-wrap max-w-md">
         I'm a Software Engineer passionate about building reliable and

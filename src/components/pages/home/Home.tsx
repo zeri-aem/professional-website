@@ -13,7 +13,7 @@ function Home() {
       <AboutPreview />
       {/* Revamp the project and experience dawg, it looks weird */}
       <ProjectsPreview />
-      {/* <ExperiencePreview /> */}
+      <ExperiencePreview />
       <ContactPreview />
     </main>
   );

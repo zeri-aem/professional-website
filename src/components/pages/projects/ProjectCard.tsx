@@ -31,13 +31,13 @@ function ProjectCard({ ...project }: ProjectCardProps) {
           <div className="flex justify-between items-center gap-2">
             <h2 className="font-bold flex-1 text-lg">{project.title}</h2>
 
-            <span className="rounded-md bg-gray-300 p-0.5 shrink-0">
+            <span className="rounded-md bg-[#a8dadc] p-0.5 shrink-0">
               {project.year}
             </span>
           </div>
           <p>{project.description}</p>
         </div>
-        <div className="bg-blue-600 w-fit p-1 rounded-md">
+        <div className="bg-[#1d3557] w-fit p-1 rounded-md">
           <h2 className="text-white">{project.category}</h2>
         </div>
       </div>
