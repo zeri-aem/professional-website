@@ -1,18 +1,11 @@
 import { Link } from "react-router-dom";
-
-type ProjectCardProps = {
-  title: string;
-  description: string;
-  year: number;
-  category: string;
-  image: string;
-};
+import { type ProjectCardProps } from "../../../types/project";
 
 function ProjectCard({ ...project }: ProjectCardProps) {
   return (
     <Link
-      to="/projects"
-      className="flex flex-col h-full rounded-xl shadow border border-gray-200/30"
+      to={`/projects/${project.id}`}
+      className="flex flex-col h-full rounded-xl shadow border border-gray-200/30 hover:border-gray-500 hover:scale-105 transition-all duration-300"
     >
       <div className="w-full h-52">
         <img

@@ -24,7 +24,7 @@ function ExperienceCard({
   return (
     <Link
       to="/experience"
-      className="flex flex-col justify-center items-center rounded-xl shadow h-full bg-white"
+      className="flex flex-col justify-center items-center rounded-xl shadow h-full bg-white hover:border-gray-500 hover:scale-105 transition-all duration-300"
     >
       <div className="w-full h-20 border border-gray-200/30 shadow-sm rounded-tr-xl rounded-tl-xl p-2">
         <img

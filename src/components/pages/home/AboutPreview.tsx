@@ -11,7 +11,9 @@ function AboutPreview() {
         continuously improving my skills in modern technologies, software
         development, and data-driven solutions...
       </p>
-      <Button to="/about">See more...</Button>
+      <Button to="/about" elem="nav">
+        See more...
+      </Button>
     </section>
   );
 }

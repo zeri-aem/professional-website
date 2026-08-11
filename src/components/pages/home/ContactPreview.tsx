@@ -7,7 +7,9 @@ function ContactPreview() {
       <h1 className="font-bold text-4xl">Contact</h1>
       <h2>Interested in collaborating or discussing opportunities?</h2>
 
-      <Button to="/contact">Email Me</Button>
+      <Button to="/contact" elem="nav">
+        Email Me
+      </Button>
       {/* List of other contacts */}
       <div className="flex justify-start items-center gap-5 p-3 bg-white rounded-2xl shadow-xl">
         <a href="https://github.com/zeri-aem" target="_blank">

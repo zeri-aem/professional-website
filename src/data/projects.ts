@@ -15,6 +15,7 @@ export const projects = [
       "A personalized website for showcasing my skills, experience, work and providing information about me",
     category: "Frontend Development",
     image: personalWebsiteImage,
+    gallery: [personalWebsiteImage, spokenImage, littleImage],
     tech: [
       "React",
       "HTML",
@@ -29,8 +30,26 @@ export const projects = [
       "Git",
       "GitHub",
     ],
-    github: "",
+    features: [
+      "Light and Dark Mode",
+      "Email Functionality Injected",
+      "Modern and Minimalist Sleek Design",
+    ],
+    github: "https://github.com/zeriaaron/personal-website",
     year: 2026,
+    difficulty: 6,
+    cas: [
+      {
+        id: 1,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+      {
+        id: 2,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+    ],
   },
   {
     id: 2,
@@ -39,6 +58,7 @@ export const projects = [
       "A website dedicated for the completing the project in the Meta Frontend Development Professional Certificate",
     category: "Frontend Development",
     image: littleImage,
+    gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: [
       "React",
       "Figma",
@@ -51,8 +71,22 @@ export const projects = [
       "Git",
       "GitHub",
     ],
+    features: ["Sabi", "Lets", "Asdasd"],
     github: "",
     year: 2025,
+    difficulty: 3,
+    cas: [
+      {
+        id: 1,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+      {
+        id: 2,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+    ],
   },
   {
     id: 3,
@@ -61,6 +95,7 @@ export const projects = [
       "Filipino sign language translator utilizing Computer Vision and Hand Landmark Detection for Deaf and Mute Individuals",
     category: "Artificial Intelligence",
     image: spokenImage,
+    gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: [
       "Python",
       "MediaPipe",
@@ -70,8 +105,22 @@ export const projects = [
       "OpenCV",
       "Tkinter",
     ],
+    features: ["Sabi", "Lets", "Asdasd"],
     github: "",
     year: 2024,
+    difficulty: 1,
+    cas: [
+      {
+        id: 1,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+      {
+        id: 2,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+    ],
   },
   {
     id: 4,
@@ -80,9 +129,24 @@ export const projects = [
       "An app that automates the calculation of students' informal reading inventory in Mamatid Elementary School",
     category: "Data Automation",
     image: philiriImage,
+    gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: ["Excel VBA"],
+    features: ["Sabi", "Lets", "Asdasd"],
     github: "",
     year: 2023,
+    difficulty: 5,
+    cas: [
+      {
+        id: 1,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+      {
+        id: 2,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+    ],
   },
   {
     id: 5,
@@ -91,9 +155,24 @@ export const projects = [
       "A smart calculator application that extends its funcionality on an advanced and complex mathematical operations.",
     category: "Software Development & Mathematics",
     image: smartCalculatorImage,
+    gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: ["MATLAB"],
+    features: ["Sabi", "Lets", "Asdasd"],
     github: "",
     year: 2022,
+    difficulty: 2,
+    cas: [
+      {
+        id: 1,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+      {
+        id: 2,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+    ],
   },
   {
     id: 6,
@@ -102,9 +181,24 @@ export const projects = [
       "An app with graphical user interface that provides beautiful views and graphs of the complete information of the chart.",
     category: "Software Development & Mathematics",
     image: freqTableImage,
+    gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: ["MATLAB"],
+    features: ["Sabi", "Lets", "Asdasd"],
     github: "",
     year: 2022,
+    difficulty: 7,
+    cas: [
+      {
+        id: 1,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+      {
+        id: 2,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+    ],
   },
   {
     id: 7,
@@ -112,9 +206,24 @@ export const projects = [
     description: `A desktop application with a website documentation made for teachers to check students' quizzes.`,
     category: "Frontend & Software Development",
     image: checkMeImage,
+    gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: ["HTML", "CSS", "JavaScript", "Tkinter"],
+    features: ["Sabi", "Lets", "Asdasd"],
     github: "",
     year: 2022,
+    difficulty: 8,
+    cas: [
+      {
+        id: 1,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+      {
+        id: 2,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+    ],
   },
   {
     id: 8,
@@ -122,9 +231,24 @@ export const projects = [
     description: `A miniature software and hardware development that reflects the Pulo Diezmo Road's traffic lights at Laguna.`,
     category: "Electronics",
     image: trafficImage,
+    gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: ["Arduino UNO", "7-segment display"],
+    features: ["Sabi", "Lets", "Asdasd"],
     github: "",
     year: 2023,
+    difficulty: 4,
+    cas: [
+      {
+        id: 1,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+      {
+        id: 2,
+        challenge: "I am challenged with",
+        solution: "This is my solution",
+      },
+    ],
   },
   // {
   //   id: 9,
