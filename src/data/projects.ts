@@ -15,7 +15,7 @@ export const projects = [
       "A personalized website for showcasing my skills, experience, work and providing information about me",
     category: "Frontend Development",
     image: personalWebsiteImage,
-    gallery: [personalWebsiteImage, spokenImage, littleImage],
+    gallery: [personalWebsiteImage, spokenImage, littleImage, trafficImage],
     tech: [
       "React",
       "HTML",

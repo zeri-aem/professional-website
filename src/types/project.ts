@@ -1,3 +1,9 @@
+export type casObject = {
+  id: number;
+  challenge: string;
+  solution: string;
+};
+
 export type Project = {
   id: number;
   title: string;
@@ -7,7 +13,8 @@ export type Project = {
   tech: string[];
   github: string;
   year: number;
-  diff: number;
+  difficulty: number;
+  cas: casObject[];
 };
 
 export type ProjectCardProps = Pick<

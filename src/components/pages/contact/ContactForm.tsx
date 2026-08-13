@@ -58,7 +58,7 @@ function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col justify-center items-start w-130 bg-white gap-3 p-10 m-10 rounded shadow-lg z-1"
+      className="flex flex-col justify-center items-start w-130 bg-white dark:text-[#1d3557] gap-3 p-10 m-10 rounded shadow-lg z-1"
     >
       <div>
         <strong className="font-bold text-2xl">Contact Me</strong>
@@ -104,8 +104,8 @@ function ContactForm() {
           {...register("subject")}
         />
       </div>
-      {errors.message && (
-        <p className="text-red-500">{errors.message.message}</p>
+      {errors.subject && (
+        <p className="text-red-500 text-sm">{errors.subject.message}</p>
       )}
 
       <div className="w-full flex flex-col gap-1">
@@ -120,7 +120,7 @@ function ContactForm() {
         />
       </div>
       {errors.message && (
-        <p className="text-red-500">{errors.message.message}</p>
+        <p className="text-red-500 text-sm">{errors.message.message}</p>
       )}
 
       <button

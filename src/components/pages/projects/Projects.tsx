@@ -81,7 +81,7 @@ function Projects() {
         return a.title.localeCompare(b.title);
 
       case "Difficulty":
-        return a.diff - b.diff;
+        return a.difficulty - b.difficulty;
 
       default:
         return 0;
@@ -106,6 +106,7 @@ function Projects() {
 
   return (
     <>
+      {/* Projects Image */}
       <div className="flex justify-center items-center -mx-3 md:-mx-5 lg:-mx-10 mb-10">
         <img
           src={projectsCover}
@@ -116,6 +117,8 @@ function Projects() {
           Projects
         </h1>
       </div>
+
+      {/* Main Content */}
       <section className="flex flex-col gap-5">
         <div className="flex items-center justify-between flex-wrap gap-3">
           {/* Search bar */}
@@ -125,15 +128,15 @@ function Projects() {
               placeholder="Search by name"
               value={search}
               onChange={handleInputChange}
-              className="w-full md:w-100 text-md rounded p-3 border bg-white border-gray-400 outline-none focus:border-[#1d3557]"
+              className="w-full md:w-100 text-md min-w-60 rounded dark:text-[#1d3557] p-3 border bg-white border-gray-400 outline-none focus:border-[#1d3557]"
             />
             {/* Suggestions */}
             {suggestions.length > 0 && (
-              <ul className="absolute bg-white border w-100 top-15 rounded-lg z-10">
+              <ul className="absolute bg-white border top-15 rounded-lg z-10 w-full">
                 {suggestions.map((suggestion) => (
                   <li
                     key={suggestion.id}
-                    className="p-2 hover:bg-gray-100 cursor-pointer rounded-lg"
+                    className="p-2 hover:bg-gray-100 dark:text-[#1d3557] cursor-pointer rounded-lg"
                     onClick={() => {
                       setSearch(suggestion.title);
                       setSuggestions([]);
@@ -151,7 +154,7 @@ function Projects() {
             <div className="relative flex gap-2 justify-center items-center">
               <button
                 type="button"
-                className="flex justify-center items-center gap-2 rounded p-3 border bg-white border-gray-400 outline-none focus:border-[#1d3557]"
+                className="flex justify-center items-center gap-2 rounded p-3 border dark:text-[#1d3557] bg-white border-gray-400 outline-none focus:border-[#1d3557]"
                 onClick={handleShowSort}
               >
                 Sort by: <span>{selectedSort}</span>{" "}
@@ -162,11 +165,11 @@ function Projects() {
                 )}
               </button>
               {isSortOpened && (
-                <ul className="absolute bg-white border w-100 top-15 right-0 rounded z-10">
+                <ul className="absolute bg-white border w-full top-15 right-0 rounded z-10">
                   {sorts.map((sort, idx) => (
                     <li
                       key={idx}
-                      className="p-2 hover:bg-gray-100 cursor-pointer rounded-lg"
+                      className="p-2 hover:bg-gray-100 dark:text-[#1d3557] cursor-pointer rounded-lg"
                       onClick={() => handleSelectedSortClick(sort)}
                     >
                       {sort}
@@ -180,7 +183,7 @@ function Projects() {
             <div className="relative flex gap-2 justify-center items-center">
               <button
                 type="button"
-                className="flex justify-center items-center gap-2 rounded p-3 border bg-white border-gray-400 outline-none focus:border-[#1d3557]"
+                className="flex justify-center items-center dark:text-[#1d3557] gap-2 rounded p-3 border bg-white border-gray-400 outline-none focus:border-[#1d3557]"
                 onClick={handleShowFilter}
               >
                 Filter by: <span>{selectedFilter}</span>{" "}
@@ -191,11 +194,11 @@ function Projects() {
                 )}
               </button>
               {isFilterOpened && (
-                <ul className="absolute bg-white border w-100 top-15 right-0 rounded z-10">
+                <ul className="absolute bg-white border w-full top-15 right-0 rounded z-10">
                   {filters.map((category, idx) => (
                     <li
                       key={idx}
-                      className="p-2 hover:bg-gray-100 cursor-pointer rounded-lg"
+                      className="p-2 hover:bg-gray-100 dark:text-[#1d3557] cursor-pointer rounded-lg"
                       onClick={() => handleSelectedFilterClick(category)}
                     >
                       {category}
@@ -206,10 +209,10 @@ function Projects() {
             </div>
           </div>
         </div>
-        {/* Projects Section */}
 
+        {/* Projects Section */}
         {sortedProjects.length > 0 ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 w-full mb-10">
             {sortedProjects.map((project) => (
               <ProjectCard {...project} key={project.id} />
             ))}{" "}

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 function ContactPreview() {
   return (
-    <section className="flex flex-col justify-center items-start gap-5 p-10 bg-[#f1faee] rounded-2xl shadow-xl mb-10">
+    <section className="flex flex-col mb-10 justify-center items-start gap-5 p-10 bg-[#f1faee] dark:bg-[#457b9d] rounded-2xl shadow-xl">
       <h1 className="font-bold text-4xl">Contact</h1>
       <h2>Interested in collaborating or discussing opportunities?</h2>
 

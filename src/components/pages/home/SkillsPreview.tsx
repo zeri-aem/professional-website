@@ -5,7 +5,7 @@ function SkillsPreview() {
   const filteredSkills = skills.filter((skill) => skill.id <= 3);
 
   return (
-    <section className="flex flex-col justify-center items-start p-10 gap-5 rounded-2xl shadow-xl">
+    <section className="flex flex-col dark:bg-[#457b9d] justify-center items-start p-10 gap-5 rounded-2xl shadow-xl">
       <h1 className="font-bold text-4xl">Skills</h1>
       <h2>Technologies I work with...</h2>
       {/* SkillsCard */}

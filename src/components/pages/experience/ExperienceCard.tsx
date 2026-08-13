@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import type { ComponentPropsWithoutRef } from "react";
+import { NavLink } from "react-router-dom";
 
 type ExperienceCardProps = {
   id: number;
@@ -9,7 +10,7 @@ type ExperienceCardProps = {
   start_date: string;
   end_date: string;
   techStack: string[];
-};
+} & Omit<ComponentPropsWithoutRef<typeof NavLink>, "to" | "id">;
 
 function ExperienceCard({
   id,
@@ -20,20 +21,22 @@ function ExperienceCard({
   start_date,
   end_date,
   techStack,
+  ...otherProps
 }: ExperienceCardProps) {
   return (
-    <Link
-      to="/experience"
-      className="flex flex-col justify-center items-center rounded-xl shadow h-full bg-white hover:border-gray-500 hover:scale-105 transition-all duration-300"
+    <NavLink
+      className="flex flex-col justify-center items-center rounded-xl shadow h-full bg-white dark:bg-[#1d3557] hover:border-gray-500 hover:scale-105 transition-all duration-300"
+      {...otherProps}
+      to={`/experience/${id}`}
     >
-      <div className="w-full h-20 border border-gray-200/30 shadow-sm rounded-tr-xl rounded-tl-xl p-2">
+      <div className="w-full h-20 border border-gray-200/30 dark:bg-white shadow-sm rounded-tr-xl rounded-tl-xl p-2">
         <img
           src={logo}
           alt={alt}
           className="w-full h-full object-contain rounded-tr-xl rounded-tl-xl"
         />
       </div>
-      <div className="flex flex-1 flex-col w-full justify-between items-start  rounded-br-xl rounded-bl-xl p-3 gap-5">
+      <div className="flex flex-1 flex-col bg-white dark:bg-[#1d3557] w-full justify-between items-start rounded-br-xl rounded-bl-xl p-3 gap-5">
         <div>
           <h2 className="font-bold text-lg">{title}</h2>
           <h2>{company}</h2>
@@ -44,7 +47,7 @@ function ExperienceCard({
         <ul className="flex justify-center items-center">
           {techStack.map((tech, idx) => (
             <li key={idx} className="flex items-center">
-              <span className="bg-[#1d3557] text-white p-1 text-sm rounded-sm">
+              <span className="bg-[#1d3557] dark:bg-[#457b9d] text-white p-1 text-sm rounded-sm">
                 {tech}
               </span>
 
@@ -55,7 +58,7 @@ function ExperienceCard({
           ))}
         </ul>
       </div>
-    </Link>
+    </NavLink>
   );
 }
 

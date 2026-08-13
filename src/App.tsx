@@ -7,6 +7,8 @@ import { Toaster } from "sonner";
 import About from "./components/pages/about/About";
 import Projects from "./components/pages/projects/Projects";
 import ProjectDetails from "./components/pages/projects/ProjectDetails";
+import Experience from "./components/pages/experience/Experience";
+import ExperienceDetails from "./components/pages/experience/ExperienceDetails";
 
 // BrowserRouter + Routes + Route Combo
 // RouterProvider + createBrowserRouter
@@ -21,7 +23,8 @@ const router = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/projects", element: <Projects /> },
       { path: "/projects/:id", element: <ProjectDetails /> },
-      { path: "/experience", element: "Experience" },
+      { path: "/experience", element: <Experience /> },
+      { path: "/experience/:id", element: <ExperienceDetails /> },
       { path: "/contact", element: <Contact /> },
     ],
   },

@@ -30,7 +30,7 @@ function Button(props: ButtonProps) {
     return (
       <NavLink
         to={to}
-        className="rounded p-2 cursor-pointer text-white bg-[#1d3557] hover:bg-[#457b9d] transition-all duration-300"
+        className="rounded p-2 cursor-pointer text-white dark:text-[#f1faee] bg-[#1d3557] dark:bg-[#1d3557] hover:bg-[#457b9d] hover:dark:bg-[#457b9d] transition-all duration-300"
         {...navProps}
       >
         {children}
