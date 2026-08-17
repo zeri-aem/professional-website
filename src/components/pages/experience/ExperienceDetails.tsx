@@ -18,7 +18,7 @@ function ExperienceDetails() {
           <ChevronLeft
             size={20}
             strokeWidth={3}
-            className="text-[##a8dadc] dark:text-[#f1faee]"
+            className="text-[#a8dadc] dark:text-[#f1faee]"
           />
         </button>
       </div>

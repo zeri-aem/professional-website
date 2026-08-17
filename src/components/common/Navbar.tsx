@@ -16,7 +16,12 @@ export default function Navbar() {
       <nav className="hidden dark:bg-[#212121] md:flex justify-between w-full h-16 items-center p-5 gap-5 bg-[#f1faee] text-[#1d3557] dark:text-[f1faee]">
         {/* Change this to NavLink later */}
         <div className="flex gap-5 justify-center items-center">
-          <h1 className="text-xl text-[#1d3557] dark:text-[#f1faee]">Zeri</h1>
+          <NavLink
+            to="/"
+            className="font-bold text-xl text-[#1d3557] dark:text-[#f1faee]"
+          >
+            Zeri
+          </NavLink>
           <NavLink
             className={({ isActive }) =>
               isActive
@@ -74,7 +79,7 @@ export default function Navbar() {
             onClick={() => setIsDark((prev) => !prev)}
             className="hover:text-[#457b9d] dark:text-[#f1faee] hover:dark:text-[#a8dadc] p-2 rounded-3xl cursor-pointer"
           >
-            {isDark ? <Moon size={24} /> : <Sun size={24} />}
+            {isDark ? <Sun size={24} /> : <Moon size={24} />}
           </button>
         </div>
       </nav>
@@ -89,7 +94,7 @@ export default function Navbar() {
               onClick={() => setIsDark((prev) => !prev)}
               className="hover:text-[#457b9d] dark:text-[#f1faee] hover:dark:text-[#a8dadc] p-2 rounded-3xl cursor-pointer"
             >
-              {isDark ? <Moon size={24} /> : <Sun size={24} />}
+              {isDark ? <Sun size={24} /> : <Moon size={24} />}
             </button>
           </div>
           <Menu

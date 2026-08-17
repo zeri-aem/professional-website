@@ -72,7 +72,7 @@ export const projects = [
       "GitHub",
     ],
     features: ["Sabi", "Lets", "Asdasd"],
-    github: "",
+    github: "https://github.com/zeriaaron/little-lemon-website",
     year: 2025,
     difficulty: 3,
     cas: [
@@ -106,7 +106,7 @@ export const projects = [
       "Tkinter",
     ],
     features: ["Sabi", "Lets", "Asdasd"],
-    github: "",
+    github: "https://github.com/zeriaaron/Spoken",
     year: 2024,
     difficulty: 1,
     cas: [
@@ -158,7 +158,7 @@ export const projects = [
     gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: ["MATLAB"],
     features: ["Sabi", "Lets", "Asdasd"],
-    github: "",
+    github: "https://github.com/zeriaaron/Smart-Calculator",
     year: 2022,
     difficulty: 2,
     cas: [
@@ -184,7 +184,7 @@ export const projects = [
     gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: ["MATLAB"],
     features: ["Sabi", "Lets", "Asdasd"],
-    github: "",
+    github: "https://github.com/zeriaaron/Frequency-Distribution-Table-GUI",
     year: 2022,
     difficulty: 7,
     cas: [
@@ -209,7 +209,7 @@ export const projects = [
     gallery: [personalWebsiteImage, spokenImage, freqTableImage],
     tech: ["HTML", "CSS", "JavaScript", "Tkinter"],
     features: ["Sabi", "Lets", "Asdasd"],
-    github: "",
+    github: "https://github.com/zeriaaron/CheckMe",
     year: 2022,
     difficulty: 8,
     cas: [

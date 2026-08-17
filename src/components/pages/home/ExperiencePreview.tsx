@@ -1,5 +1,6 @@
 import ExperienceCard from "../experience/ExperienceCard";
 import { experiences } from "../../../data/experiences";
+import Button from "../../common/Button";
 
 function ExperiencePreview() {
   return (
@@ -12,6 +13,9 @@ function ExperiencePreview() {
           <ExperienceCard key={exp.id} {...exp} />
         ))}
       </div>
+      <Button elem="nav" to="/experience">
+        View Experience
+      </Button>
     </section>
   );
 }

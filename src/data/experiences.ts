@@ -17,7 +17,7 @@ export const experiences = [
     responsibilities: [
       "Authoring technical documentation, incident reports, SOPs, and business-facing presentations to support knowledge sharing and operational continuity.",
       "Analyzing, developing, and debugging applications using SQL, COBOL, and CL programs within enterprise systems.",
-      "Provided cross-team support for other systems during scheduled system upgrades, maintenance activities, and weekend implementation activities to ensure smooth and successful deployments.",
+      "Providing cross-team support for other systems during scheduled system upgrades, maintenance activities, and weekend implementation activities to ensure smooth and successful deployments.",
       "Collaborating with cross-functional teams (engineers, PMs, business users) to improve system reliability, and workflow efficiency.",
     ],
     achievements: [

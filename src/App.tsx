@@ -9,6 +9,7 @@ import Projects from "./components/pages/projects/Projects";
 import ProjectDetails from "./components/pages/projects/ProjectDetails";
 import Experience from "./components/pages/experience/Experience";
 import ExperienceDetails from "./components/pages/experience/ExperienceDetails";
+import { useEffect } from "react";
 
 // BrowserRouter + Routes + Route Combo
 // RouterProvider + createBrowserRouter

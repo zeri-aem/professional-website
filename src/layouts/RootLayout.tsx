@@ -1,8 +1,15 @@
 import Navbar from "../components/common/Navbar";
 import Footer from "../components/common/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function RootLayout() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="dark:bg-[#212121] bg-[#f1faee]">
       <header>

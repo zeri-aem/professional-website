@@ -48,13 +48,14 @@ function ProjectDetails() {
 
       {/* Starting Project */}
       <article className="flex flex-col flex-wrap justify-center gap-2 mt-5">
-        <div className="flex flex-wrap gap-2">
+        {/* <div className="flex flex-wrap gap-2"> */}
+        <div className="grid md:grid-cols-2 gap-2">
           {/* Left Panel */}
           <section className="flex flex-3 flex-col border border-gray-300 dark:border-gray-500">
             <img src={project.image} alt={`${project.title} Image`} />
 
             {/* Container */}
-            <div className="flex flex-wrap bg-white dark:bg-[#212121]">
+            <div className="flex flex-wrap bg-white dark:bg-[#212121] h-full">
               {/* Category, Title, Description */}
               <div className="flex flex-3 flex-col justify-start items-start p-10 gap-5">
                 <div className="bg-[#1d3557] w-fit p-1 rounded-md">
@@ -104,10 +105,10 @@ function ProjectDetails() {
           </section>
 
           {/* Right Panel */}
-          <section className="flex flex-2 flex-col bg-white justify-start border border-gray-300 dark:border-gray-500 p-3 gap-2 dark:bg-[#212121]">
+          <section className="flex flex-2 flex-col h-full bg-white justify-start border border-gray-300 dark:border-gray-500 p-3 gap-2 dark:bg-[#212121]">
             {/* Gallery */}
             <h2 className="font-bold text-2xl">Gallery</h2>
-            <div className="grid md:grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-2 flex-1">
+            <div className="grid md:grid-cols-2 grid-rows-2 gap-2 flex-1">
               {project.gallery.map((img, idx) => (
                 <img
                   key={idx}
@@ -140,18 +141,21 @@ function ProjectDetails() {
               ))}
             </div>
 
-            <hr className="border-gray-300 dark:border-gray-500 -mx-3" />
-
             {/* Links */}
-            <h2 className="font-bold text-2xl">Links</h2>
-            <Button
-              elem="a"
-              href={project.github}
-              target="_blank"
-              className="self-start rounded p-2 cursor-pointer text-white bg-[#1d3557] hover:bg-[#457b9d] transition-all duration-300"
-            >
-              View on GitHub
-            </Button>
+            {project.github && (
+              <>
+                <hr className="border-gray-300 dark:border-gray-500 -mx-3" />
+                <h2 className="font-bold text-2xl">Links</h2>
+                <Button
+                  elem="a"
+                  href={project.github}
+                  target="_blank"
+                  className="self-start rounded p-2 cursor-pointer text-white bg-[#1d3557] hover:bg-[#457b9d] transition-all duration-300"
+                >
+                  View on GitHub
+                </Button>
+              </>
+            )}
           </section>
         </div>
 

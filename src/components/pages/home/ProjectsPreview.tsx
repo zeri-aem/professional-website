@@ -1,5 +1,6 @@
 import { projects } from "../../../data/projects";
 import ProjectCard from "../projects/ProjectCard";
+import Button from "../../common/Button";
 
 function ProjectsPreview() {
   const formattedProjects = projects.filter((project) => project.id <= 3);
@@ -15,6 +16,9 @@ function ProjectsPreview() {
           <ProjectCard key={project.id} {...project} />
         ))}
       </div>
+      <Button elem="nav" to="/projects">
+        View Projects
+      </Button>
     </section>
   );
 }
